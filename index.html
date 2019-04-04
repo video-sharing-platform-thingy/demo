@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>VSPT Demo</title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/kognise/water.css@latest/water.min.css'>
+  </head>
+  <body>
+    <h1>VSPT Demo</h1>
+    <p id='info'></p>
+
+    <h2>Login</h2>
+    <form id='login'>
+      <input id='login-email' type='email' placeholder='Email' autocomplete='email'>
+      <input id='login-password' type='password' placeholder='Password' autocomplete='current-password'>
+      <input id='login-rm' type='checkbox'> <label for='login-rm'>Remember me</label>
+      <input type='submit'>
+    </form>
+
+    <h2>Sign up</h2>
+    <form id='signup'>
+      <input id='signup-name' type='text' placeholder='Name' autocomplete='name'>
+      <input id='signup-email' type='email' placeholder='Email' autocomplete='email'>
+      <input id='signup-password' type='password' placeholder='Password' autocomplete='new-password'>
+      <input id='signup-password-cnf' type='password' placeholder='Confirm password' autocomplete='new-password'>
+      <input type='submit'>
+    </form>
+    <p>Make sure to get the confirm token from the command line and enter it into the form below.</p>
+
+    <h2>Confirm account</h2>
+    <form id='confirm'>
+      <input id='confirm-token' type='text' placeholder='Confirm token'>
+      <input type='submit'>
+    </form>
+
+    <h2>Buttons</h2>
+    <button id='logout'>Log out</button>
+    <button id='check'>Check logged in!</button>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/cash/3.1.0/cash.min.js'></script>
+    <script src='script.js'></script>
+  </body>
+</html>
